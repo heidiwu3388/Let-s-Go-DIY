@@ -9,7 +9,12 @@
  
 // });
 
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
 
 
 const field = document.querySelector('textarea');
@@ -53,6 +58,8 @@ submit.onclick = function(event){
       field.value = '';
     }
 }
+
+
 
 
 

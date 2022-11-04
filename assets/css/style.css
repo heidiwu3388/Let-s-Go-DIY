@@ -2,9 +2,6 @@ body {
     font-size:600;
     color:rgb(69, 23, 69);
     background-color:lightblue; 
-    background-image: url('../images/background-image2.jpeg');
-    background-size: 1900px 825px;
-    background-repeat: no-repeat;
     /* border-radius:50px;
     display:block; */
 }
@@ -25,4 +22,9 @@ body {
 }
 #post:hover{
     background-color: deeppink;
+}
+
+
+h1 {
+    color:red;
 }

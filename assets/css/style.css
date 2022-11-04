@@ -1,0 +1,28 @@
+body {
+    font-size:600;
+    color:rgb(69, 23, 69);
+    background-color:lightblue; 
+    background-image: url('../images/background-image2.jpeg');
+    background-size: 1900px 825px;
+    background-repeat: no-repeat;
+    /* border-radius:50px;
+    display:block; */
+}
+
+/* .background-image {
+    background-image: url('../images/background-image2.jpeg'); 
+
+}  */
+
+
+/* body {
+    background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed; 
+
+}*/
+#comment-box, #post {
+    border: none;
+    border-radius: 5px;
+}
+#post:hover{
+    background-color: deeppink;
+}

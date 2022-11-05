@@ -11,6 +11,10 @@ body {
     /* border-radius:50px;
     display:block; */
 }
+.navbar-brand,
+.main-topic {
+    font-family: 'Lakki Reddy', cursive;
+}
 
 /* .background-image {
     background-image: url('../images/background-image2.jpeg'); 
@@ -43,10 +47,10 @@ h1 {
     justify-content: flex-start;
 } */
 
-.div3{
+/* .div3{
     width:80%;
     margin:auto;
-}
+} */
 
 /* .left{
     flex-grow: 0;     /* do not grow   - initial value: 0 */
@@ -85,6 +89,7 @@ h1 {
 .category-section {
     background-color: #ffddd2;
 }
+
 
 footer {
     background-color: var(--medium-blue);

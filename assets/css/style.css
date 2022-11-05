@@ -28,3 +28,54 @@ body {
 h1 {
     color:red;
 }
+
+
+
+.div1,.div2,.div3{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.div1,.div2,.div3{
+    width:80%;
+    margin:auto;
+}
+
+.left{
+    flex-grow: 0;     /* do not grow   - initial value: 0 */
+    flex-shrink: 0;   /* do not shrink - initial value: 1 */
+    flex-basis: 200px;
+    margin:20px;
+    border-right:4px solid white;
+    align-self: stretch;
+}
+
+
+.left{
+    display:none;
+}
+
+.left{
+    width:0;
+}
+
+.left{
+    width:0;
+}
+
+.contacts-links{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    width:100%;
+}
+
+.contacts-links{
+    height:350px;
+}
+
+/* .div3 {
+    width:100%;
+    
+} */

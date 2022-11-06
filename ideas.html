@@ -31,10 +31,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fs-3 disabled" href="#">Home</a>
+                <a class="nav-link fs-3" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-3" href="./ideas.html">Ideas</a>
+                <a class="nav-link fs-3 disabled" href="#">Ideas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-3" href="./favorites.html">Favorites</a>
@@ -45,18 +45,6 @@
     <main>
         <div class="container-fluid">
             <div class="row d-flex align-items-stretch">
-                <!-- YouTube -->
-                <div class="col-sm-12 col-md-8 offset-md-0 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="text-dark my-5 main-topic">Project of the Day :</h1>
-                    <iframe class="mb-5"
-                        width="480" 
-                        height="270" 
-                        src="https://www.youtube.com/embed/Jzlx9TMCsVA" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
                 <!-- Catogory buttons -->
                 <div class="col-sm-12 col-md-4 d-flex flex-column category-section">
                     <h3 class="text-dark px-3 m-3">Click a Category from below to get more project ideas:</h3>
@@ -73,6 +61,46 @@
                         <button type="button" class="btn btn-success my-1">Crocheting</button>
                     </div>
                 </div>
+                <!-- Project Ideas -->
+                <div class="col-sm-12 col-md-8 offset-md-0 d-flex flex-column justify-content-start align-items-center">
+                    <h1 class="text-dark my-5 main-topic">Ideas for You :</h1>
+                    <div class="contain-fluid w-100">
+                        <div class="row d-flex flex-row align-items-start justify-content-start">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="idea-container border border-danger my-2">
+                                    Idea 1    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <div class="idea-container border border-danger my-2">
+                                    Idea 2 
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="idea-container border border-danger my-2">
+                                    Idea 3    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="idea-container border border-danger my-2">
+                                    Idea 4    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="idea-container border border-danger my-2">
+                                    Idea 5    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="idea-container border border-danger my-2">
+                                    Idea 6    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
         <!-- Go to Favorite -->
@@ -118,71 +146,3 @@
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
-                                    
-                                    
-                 
-                    <!--fa fa spinner and fa fa heart beat -->
-                    
-                    <!-- <div class="fa-3x">
-                        <i class="fa-solid fa-spinner fa-spin-pulse" id="In progress"></i>
-                    </div>
-                    
-                    <div class="fa-3x">
-                        <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;" id="heart beat"></i>
-                    </div>
-                    
-                    <div class="background-image">
-                        <div class="quote">
-                            <blockquote cite = "https://masterpiecesociety.com/100-quotes-art-creativity/#:~:text=%E2%80%9CEvery%20artist%20was%20first%20an,and%20torment.%E2%80%9D%20%E2%80%93%20Claude%20Monet">
-                                
-                                “Every artist was first an amateur.” – Ralph Waldo Emerson
-                            </blockquote>
-                        </div>
-                    </div>
-                    
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <form>
-                        Username: <input type = "text" name = "Name" placeholder = "Username"> <br><br>
-                        Password: <input type = "Password" name = "Password" placeholder = "Password"><br><br>
-                        Favorite Color: <input type = "Color" name="Color"><br><br>
-                        Birthday: <input type = "date" name="birthday"><br><br>
-                    </form> -->
-                    
-                    <!-- <input type="text" id="comment-box" placeholder="Enter comment">
-                        <button id="post">Post</button> -->
-                        
-                        <!-- <div class="container">
-                            <h2>Leave us a comment</h2>
-                            <form>
-                                <textarea id="" placeholder="Add Your Comment" value=" "></textarea>
-                                <div class="btn">
-                                    <input id="submit" type="submit" value="Comment">
-                                    <button id="clear">  
-                                        &#128591;</button>
-                                    </div> 
-                                </form>
-                            </div>
-                            <div class="comments">
-                                <h2>Comments</h2>
-                                <div id="comment-box">
-                                </div>
-                            </div>
-                        -->
-                        
-                        <!-- <div class="postcomment">
-                            <FORM>
-                                <br>Name:</b> <?php echo $_POST['name']; ?> <INPUT type="text" name="name">
-                                    <br>E-Mail:</b> <?php echo $_POST['email']; ?> <INPUT type="text" name="email">
-                                        <br>Subject:</b> <?php echo $_POST['subject']; ?> <INPUT type="text" name="subject">
-                                            <br>Comment:</b> <?php echo $_POST['comment']; ?> <TEXTAREA type="text" name="comment"></TEXTAREA>
-                                        </FORM> -->
-                                                                           
-                                    
-                                    
-                                    
-                                    <!-- <script src="https://apis.google.com/js/platform.js"></script>
-                                        
-<div class="g-ytsubscribe" data-channel="AllAboutArt" data-layout="default" data-count="default"></div> -->

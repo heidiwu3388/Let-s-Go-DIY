@@ -22,10 +22,15 @@ function GetIdeas(cat) {
 
 
 //when page is loaded, parse query string from the URL to get the category
-let category = document.location.search.split("=")[1];
-console.log("categary: ", category);
-if (category.length !== 0) {
-    GetIdeas(category);
+let query = document.location.search;
+// if there is query string
+if (!!query) {
+    let category = query.split("=")[1];
+    console.log("categary: ", category);
+    // if there is a catagory
+    if (!!category) {
+        GetIdeas(category);
+    }
 }
 
 //when user click on a category button 

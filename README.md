@@ -86,61 +86,6 @@ THEN the favorite projects will persist
     <li>Create Password</li>
     </ul> 
 
-<!-- At the end if there is time. 
-<li>Users can post their pojects</li>
-<li>Others can comment on it.</li> -->
-
-<!-- <table border = "5">
-<tr>
-<th> Categories </th>
-<th>Audience</th>
-<th> Buttons </th>
-<th> Local Storage</th>
-<th> Login Requirements</th>
-</tr>
-<tr>
-    <td>Project of the day</td>
-    <td>Age Group</td>
-       <td>Favorte button leads to page</td>
-        <td>Favorites projects buttons and page</td>
-        <td>Create Username</td>
-<tr>
-    <td>Themed Projects: Holidays etc.</td>
-    <td>Skill Levels</td>
-    <td>Progression button leads to page</td>
-     <td>Progression button and page</td>
-     <td>Create Password</td>
- </tr>
- <tr>
-    <td>Knitting</td>
-    <td></td>
-    <td>shuffle button) leads to next project if they don't like the project of the day already shown)</td>
-    <td></td>
-    <td></td>
- </tr>
-<tr>
-    <td>Calligraphy</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>Month Dailies</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>Scrapbooking</td>
-     <td></td>
-      <td></td>
-       <td></td>
-        <td></td>
-    </tr>
-
-</table> -->
 
 
 # Process
@@ -160,12 +105,8 @@ THEN the favorite projects will persist
 </ul>
 <ul>
     <h4>APIs Used</h4>
-    <li>Pinterest</li>
     <li>Youtube</li>
-    <li>Reddit</li>
-    <li>Instagram</li>
-    <li>Google Drive?</li>
-    <li>One Drive?</li>
+    <li>Devian Art</li>
 </ul>
 
 
@@ -178,7 +119,7 @@ Explain exactly what
 <li>Presentation: </li>
 
 ## Challenges
-
+Some challenges we faced was when we tried to figure how to use the api for Pinterest, it was a long process where we had to fill out an application and get approved. We had help from the TAs and Brian, but were were unnsuccessful. We had applied again to Pinterest letting them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. We didn't want to just wait around and not continue on the project, so we looked for another alternative and found DevianArt. It took awile to .... 
 
 
 
@@ -189,7 +130,7 @@ Explain exactly what
 
 ## Demo
 
-screenshots and video
+screenshots and video below 
 
 ## Directions for Future Development
 <ul>
@@ -197,7 +138,7 @@ screenshots and video
     <li>Save in Progress Projects</li>
     <li>Shuffle POD DIY Projects</li>
     <li>Post Projects</li>
-    <li>Comment on other users' Projects</li>
+    <li>Comment on other users' Projects/Other users comment on your projects</li>
 </ul>
 
 

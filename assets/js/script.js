@@ -6,7 +6,7 @@ let categoryContainerEl = document.querySelector("#category-buttons-container");
 function goToIdeasPage(event){
     if (event.target.matches("button")){
         let category = event.target.textContent;
-        document.location.href = `./ideas.html?q=${category}`;
+        document.location.href = `./hotspots.html?q=${category}`;
     }
 }
 

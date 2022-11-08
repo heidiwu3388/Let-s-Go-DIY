@@ -2,8 +2,8 @@
 let categoryContainerEl = document.querySelector("#category-buttons-container");
 
 
-function GetIdeas(cat) {
-    console.log("inside GetIdeas(", cat, ")");
+function getHotspot(cat) {
+    console.log("inside getHotpot(", cat, ")");
     // *** compose API URL
     let apiUrl = `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/serch?term=Art&location=Portland&categories=Art&limit=6&review_count=15&sort_rating=rating`;
     var bearer =
@@ -24,11 +24,12 @@ function GetIdeas(cat) {
       });
   }
 
-  
+
 //when page is loaded, parse query string from the URL to get the category
 let query = document.location.search;
 // if there is query string
 if (!!query) {
+
     let category = query.split("=")[1];
     console.log("category:", category);
     // if there is a catogory
@@ -37,33 +38,8 @@ if (!!query) {
     }
 }
 
-
-
-// //when page is loaded, parse query string from the URL to get the category
-// let category = document.location.search.split("=")[1];
-// console.log("category: ", category);
-// if (category.length !== null) {
-//     GetIdeas(category);
-// }
-
-
-
-
-
 //when user click on a category button 
 categoryContainerEl.addEventListener("click", function(event){
     let category = event.target.textContent;
-    GetIdeas(category);
+    getHotspot(category);
 });
-
-
-// https://www.deviantart.com/search/deviations?q=calligraphy
-// https://www.deviantart.com/search/deviations?q=scrapbooking
-// https://www.deviantart.com/search/deviations?q=knitting
-// https://www.deviantart.com/search/deviations?q=jewelry+making
-// https://www.deviantart.com/search/deviations?q=drawing
-// https://www.deviantart.com/search/deviations?q=painting
-// https://www.deviantart.com/search/deviations?q=candle+making
-// https://www.deviantart.com/search/deviations?q=polymer+clay
-// https://www.deviantart.com/search/deviations?q=metal+stamping
-// https://www.deviantart.com/search/deviations?q=crocheting

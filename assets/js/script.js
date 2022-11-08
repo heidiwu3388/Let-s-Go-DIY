@@ -42,22 +42,9 @@ function getProjectIdeas(cat) {
             </iframe>
         `;         
         iframeContainerEl.innerHTML = template;   
-        // get embed HTML by video id
-        // let urlGetVideoById =`https://youtube.googleapis.com/youtube/v3/videos?key=${apiKeyYouTube}&part=player&id=${videoId}`;
-        // fetch(urlGetVideoById)
-        // .then(function(response){
-        //     return response.json();
-        // })
-        // .then(function(data){
-        //     console.log("Get Video by ID data: ", data);
-        //     let embedHtml = data.items[0].player.embedHtml;
-        //     console.log("embed HTML: ", embedHtml);
-
-
-        // });
-    });
+        
+    })
 }
-
 // when the page is loaded, get Project of the day form YouTube
 categoryContainerEl.addEventListener("click", function(event){
     if (event.target.matches("button")) {

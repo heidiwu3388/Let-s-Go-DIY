@@ -4,7 +4,10 @@ let categoryContainerEl = document.querySelector("#category-buttons-container");
 let projectContainerEl = document.querySelector("#project-container");
 let allFavorites = [];
     
- 
+ function init() {
+    allFavorites = JSON.parse(localStorage.getItem("MyFavoriteProjects")||"[]");
+    console.log("allFavorites: ", allFavorites);
+ }
 
 
 function getProjectIdeas(cat) {
@@ -49,11 +52,15 @@ function getProjectIdeas(cat) {
                     </button>
                 </div>
             `;   
-        }      
+        } 
         projectContainerEl.innerHTML = template;   
+        // if the project is already in favorite list (allFavorites), disable the favorite button
         
     })
 }
+
+// call init() to load local storage (MyFavoriteProjects) into array allFavorites
+init();
 
 // handler when one of the Category buttons is clicked
 categoryContainerEl.addEventListener("click", function(event){
@@ -75,15 +82,10 @@ projectContainerEl.addEventListener("click", function(event){
             title : vTitle,
             id : vId,
         }
-        console.log("allfavorites (before push): ", allFavorites);
-        console.log("favorite: (before push)", favorite);
         // add new favorite to allFavorites array
         allFavorites.push(favorite);
-        console.log("allfavorites (after push): ", allFavorites);
-        console.log("favorite: (after push)", favorite);
         // store allFavorites to local storage
-        localStorage.setItem("MyFavoriteProject", JSON.stringify(allFavorites));
-
+        localStorage.setItem("MyFavoriteProjects", JSON.stringify(allFavorites));
         // disable the favorite button
         event.target.setAttribute("disabled", "true");
     }

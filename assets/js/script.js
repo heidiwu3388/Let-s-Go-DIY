@@ -2,25 +2,21 @@
 const apiKeyYouTube = "AIzaSyBT5Jp3mNr4LyeII6cjqzdru5xFWPs-Prw";
 let categoryContainerEl = document.querySelector("#category-buttons-container");
 let projectContainerEl = document.querySelector("#project-container");
-let allCategories=["Calligraphy", 
-                "Scrapbooking",
-                "Knitting",
-                "Jewelry Making",
-                "Drawing",
-                "Candles",
-                "Polymer Clay",
-                "Metal Stamping",
-                "Crocheting",];
+let allFavorites = [];
+    
  
 
 
 function getProjectIdeas(cat) {
-    //
-    // let catString = cat.trim().replace(" ", "+");
-    let queryString = `${cat.trim().replace(" ", "+")}+DIY+HowTo`
-    console.log("queryString: ", queryString);
-    
-    urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search?key=${apiKeyYouTube}&q=${queryString}&kind=video&part=snippet&maxResults=6`;
+    // build the YouTube search API URL
+    urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search`
+    urlYouTubeSearch += `?key=${apiKeyYouTube}`
+    urlYouTubeSearch += `&q=${cat.trim().replace(" ", "+")}+DIY+HowTo`
+    urlYouTubeSearch += `&kind=video`
+    urlYouTubeSearch += `&part=snippet`
+    urlYouTubeSearch += `&maxResults=6`
+    urlYouTubeSearch += `&order=viewCount`;
+
     fetch(urlYouTubeSearch)
     .then(function(response){
         return response.json();
@@ -32,12 +28,12 @@ function getProjectIdeas(cat) {
         for (let i=0; i<data.items.length; i++) {
             // get title and video id from data
             let videoId = data.items[i].id.videoId;
-            let title = data.items[i].snippet.title;
-            console.log("title", i, title);
+            let videoTitle = data.items[i].snippet.title;
+            console.log("title", i, videoTitle);
             // build HTML to display the title, the video and the favorite button
             template += `
                 <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
-                    <div class="text-dark fs-5 my-2">${title}</div>
+                    <div class="text-dark fs-5 my-2">${videoTitle}</div>
                     <div class="iframe-container">
                         <iframe class="mb-1"
                             width="480" 
@@ -48,7 +44,7 @@ function getProjectIdeas(cat) {
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <button type="button" class="btn btn-outline-light mt-1 mb-5 data-video-id=${videoId}">
+                    <button type="button" class="btn btn-outline-light mt-1 mb-5" data-video-id="${videoId}" data-video-title="${videoTitle}">
                         🤍&nbsp&nbspFavorite Me
                     </button>
                 </div>
@@ -68,6 +64,30 @@ categoryContainerEl.addEventListener("click", function(event){
 });
 
 // handler when one of the Favorite buttons is clicked
+projectContainerEl.addEventListener("click", function(event){
+    if (event.target.matches("button")) {
+        // build the favorite object
+        let vTitle = event.target.dataset.videoTitle;
+        console.log("vTitle: ", vTitle);
+        let vId = event.target.dataset.videoId;
+        console.log("vId: ", vId);
+        let favorite = {
+            title : vTitle,
+            id : vId,
+        }
+        console.log("allfavorites (before push): ", allFavorites);
+        console.log("favorite: (before push)", favorite);
+        // add new favorite to allFavorites array
+        allFavorites.push(favorite);
+        console.log("allfavorites (after push): ", allFavorites);
+        console.log("favorite: (after push)", favorite);
+        // store allFavorites to local storage
+        localStorage.setItem("MyFavoriteProject", JSON.stringify(allFavorites));
+
+        // disable the favorite button
+        event.target.setAttribute("disabled", "true");
+    }
+})
 
 
 

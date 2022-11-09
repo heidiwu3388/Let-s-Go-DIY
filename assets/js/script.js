@@ -27,19 +27,24 @@ function getProjectIdeas(cat) {
     })
     .then (function(data){
         console.log("YouTube Search data: ", data);
-        // get video id from data
+        // get title and video id from data
         let videoId = data.items[0].id.videoId;
-        console.log("video id: ", videoId);
-        // podYoutubeEl.setAttribute("src", `https://www.youtube.com/embed/${videoId}`); 
-        template = `
-            <iframe class="mb-5"
+        let title = data.items[0].snippet.title;
+        console.log("title: ",title);
+        // build HTML to display the title, the video and the favorite button
+        let template = `
+            <div class="text-dark fs-5 my-2">${title}</div>
+            <iframe class="mb-1"
                 width="480" 
-                    height="270" 
-                    src="https://www.youtube.com/embed/${videoId}" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
+                height="270" 
+                src="https://www.youtube.com/embed/${videoId}" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
             </iframe>
+            <button type="button" class="btn btn-outline-light my-1 data-video-id=${videoId}">
+                🤍&nbsp&nbspFavorite Me
+            </button>
         `;         
         iframeContainerEl.innerHTML = template;   
         

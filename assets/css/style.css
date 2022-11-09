@@ -6,85 +6,32 @@
 body {
     font-size:600;
     color:rgb(69, 23, 69);
-    /* background-color:lightblue;  */
     background-color: #8ecae6; 
-    /* border-radius:50px;
-    display:block; */
 }
+
 .navbar-brand,
 .main-topic {
     font-family: 'Lakki Reddy', cursive;
 }
 
-/* .background-image {
-    background-image: url('../images/background-image2.jpeg'); 
-
-}  */
-
-
-/* body {
-    background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed; 
-
-}*/
-#comment-box, #post {
+/* #comment-box, #post {
     border: none;
     border-radius: 5px;
 }
 #post:hover{
     background-color: deeppink;
-}
-
-
-h1 {
-    color:red;
-}
-
-
-
-/* .div3{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
 } */
 
-/* .div3{
-    width:80%;
-    margin:auto;
-} */
-
-/* .left{
-    flex-grow: 0;     /* do not grow   - initial value: 0 */
-    flex-shrink: 0;   /* do not shrink - initial value: 1 */
-    /* flex-basis: 200px;
-    margin:20px;
-    border-right:4px solid white;
-    align-self: stretch;
-}  */
-
-
- 
-/* .left{
-    display:none;
-}
-
-.left{
-    width:0;
-}
-
-.left{
-    width:0;
-} */
-
-.contacts-links{
+/* .contacts-links{
     display:flex;
     align-items:center;
     justify-content: space-around;
     width:100%;
-}
+} */
 
-.contacts-links{
+/* .contacts-links{
     height:350px;
-}
+} */
 
 .category-section {
     background-color: #ffddd2;
@@ -93,4 +40,21 @@ h1 {
 
 footer {
     background-color: var(--medium-blue);
+}
+
+
+/* responsive for YouTube iframe */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
 }

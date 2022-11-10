@@ -2,6 +2,7 @@
 const apiKeyYouTube = "AIzaSyBT5Jp3mNr4LyeII6cjqzdru5xFWPs-Prw";
 let categoryContainerEl = document.querySelector("#category-buttons-container");
 let projectContainerEl = document.querySelector("#project-container");
+let messageEl = document.querySelector("#message");
 let allFavorites = [];
     
  function init() {
@@ -34,6 +35,9 @@ console.log(response);
         })
         .then (function(data){
 console.log(data);
+            // display selected category at the message area
+            messageEl.textContent = `( ${cat} )`;
+            // loop through the data.items array to get data and built HTML
             template = ``;
             for (let i=0; i<data.items.length; i++) {
                 // get title and video id from data
@@ -50,7 +54,6 @@ console.log(data);
                     var heartEmoji = "🤍";
                     var buttonText ="Favorite Me"
                 }
-                console.log("buttonText: ", buttonText);
                 // build HTML to display the title, the video and the favorite button
                 template += `
                 <div class="col-12 col-lg-6 d-flex flex-column align-items-center">

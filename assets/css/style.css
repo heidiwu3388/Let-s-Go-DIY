@@ -14,25 +14,6 @@ body {
     font-family: 'Lakki Reddy', cursive;
 }
 
-/* #comment-box, #post {
-    border: none;
-    border-radius: 5px;
-}
-#post:hover{
-    background-color: deeppink;
-} */
-
-/* .contacts-links{
-    display:flex;
-    align-items:center;
-    justify-content: space-around;
-    width:100%;
-} */
-
-/* .contacts-links{
-    height:350px;
-} */
-
 .category-section {
     background-color: #ffddd2;
 }
@@ -41,7 +22,6 @@ body {
 footer {
     background-color: var(--medium-blue);
 }
-
 
 /* responsive for YouTube iframe */
 .iframe-container {

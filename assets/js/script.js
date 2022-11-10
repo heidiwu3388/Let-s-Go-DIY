@@ -6,9 +6,17 @@ let allFavorites = [];
     
  function init() {
     allFavorites = JSON.parse(localStorage.getItem("MyFavoriteProjects")||"[]");
-    console.log("allFavorites: ", allFavorites);
  }
 
+// check if the vedioId is in the allFavorites array
+ function isProjectInFavorite(vedioId) {
+    for (let i=0; i<allFavorites.length; i++) {
+        if (vedioId === allFavorites[i].id){
+            return true;
+        }
+    }
+    return false;
+ }
 
 function getProjectIdeas(cat) {
     // build the YouTube search API URL
@@ -25,14 +33,24 @@ function getProjectIdeas(cat) {
         return response.json();
     })
     .then (function(data){
-        console.log("YouTube Search data: ", data);
-        
         template = ``;
         for (let i=0; i<data.items.length; i++) {
             // get title and video id from data
             let videoId = data.items[i].id.videoId;
             let videoTitle = data.items[i].snippet.title;
-            console.log("title", i, videoTitle);
+            // set up the disableFavorite string
+            let disableFavorite;
+            if (isProjectInFavorite(videoId)) {
+                disableFavorite = "disabled";
+                heartEmoji = "❤️";
+                buttonText ="Added"
+            } 
+            else {
+                disableFavorite = "";
+                heartEmoji = "🤍";
+                buttonText ="Favorite Me"
+            }
+            console.log(i, disableFavorite);
             // build HTML to display the title, the video and the favorite button
             template += `
                 <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
@@ -47,15 +65,13 @@ function getProjectIdeas(cat) {
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <button type="button" class="btn btn-outline-light mt-1 mb-5" data-video-id="${videoId}" data-video-title="${videoTitle}">
-                        🤍&nbsp&nbspFavorite Me
+                    <button type="button" class="btn btn-outline-light mt-1 mb-5" data-video-id="${videoId}" data-video-title="${videoTitle}" ${disableFavorite}>
+                        ${heartEmoji}&nbsp&nbsp${buttonText}
                     </button>
                 </div>
             `;   
         } 
         projectContainerEl.innerHTML = template;   
-        // if the project is already in favorite list (allFavorites), disable the favorite button
-        
     })
 }
 
@@ -75,9 +91,7 @@ projectContainerEl.addEventListener("click", function(event){
     if (event.target.matches("button")) {
         // build the favorite object
         let vTitle = event.target.dataset.videoTitle;
-        console.log("vTitle: ", vTitle);
         let vId = event.target.dataset.videoId;
-        console.log("vId: ", vId);
         let favorite = {
             title : vTitle,
             id : vId,

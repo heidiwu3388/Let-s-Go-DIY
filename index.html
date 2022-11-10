@@ -24,9 +24,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid d-flex flex-row align-items-start mt-3">
           <a class="navbar-brand fs-1 me-5 " href="#">Let's Go DIY !!!</a>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button> -->
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -46,7 +46,7 @@
             <div class="row d-flex align-items-stretch">
                 <!-- Catogory buttons -->
                 <div class="col-sm-12 col-md-4 d-flex flex-column category-section">
-                    <h3 class="text-dark px-3 m-3">Click a Category from below to get project idea:</h3>
+                    <h3 class="text-dark px-3 m-3">Click a category from below to get project ideas:</h3>                  
                     <div class="d-flex flex-column px-3 m-3" id="category-buttons-container">
                         <button type="button" class="btn btn-primary my-1">Calligraphy</button>
                         <button type="button" class="btn btn-secondary my-1">Scrapbooking</button>
@@ -62,7 +62,10 @@
                 </div>
                 <!-- YouTube -->
                 <div class="col-sm-12 col-md-8 offset-md-0 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="text-dark my-5 main-topic">Project Ideas:</h1>
+                    <h1 class="text-dark mt-5 main-topic">Project Ideas:</h1>
+                    <h2 class="text-dark" id="message">
+                        <!-- dynamically generated HTML goes here -->                        
+                    </h2>
                     <div class="row d-flex align-items-end" id="project-container">
                             <!-- dynamically generated HTML goes here -->
                     </div>
@@ -95,7 +98,21 @@
                 </a>
             </div>
         </div>
-    </footer>                    
+    </footer>   
+    <!-- Modal -->
+    <div class="modal fade" id="errMsgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Error Message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="errMsg">
+            ...
+            </div>
+        </div>
+        </div>
+    </div>                 
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

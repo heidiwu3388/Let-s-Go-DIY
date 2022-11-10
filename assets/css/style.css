@@ -40,3 +40,7 @@ footer {
 }
 
 
+/* disabled favorite button */
+.favorite-button:disabled {
+    color: red;
+}

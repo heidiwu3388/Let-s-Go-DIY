@@ -31,6 +31,17 @@ function getProjectIdeas(cat) {
   urlYouTubeSearch += `&part=snippet`;
   urlYouTubeSearch += `&maxResults=6`;
   urlYouTubeSearch += `&order=viewCount`;
+  urlYouTubeSearch += `&safeSearch=strict`;
+  urlYouTubeSearch += `&type=video`;
+  urlYouTubeSearch += `&videoEmbeddable=true`;
+  urlYouTubeSearch += `&videoDuration=short`;
+  urlYouTubeSearch += `&publishedAfter=2015-01-01T00:00:00Z`;
+  //   urlYouTubeSearch += `&videoDimension=3d`;
+//   urlYouTubeSearch += `&videoDefinition=high`;
+
+  
+
+
   // initialize error 
   let ok = true;
   fetch(urlYouTubeSearch)

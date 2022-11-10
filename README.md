@@ -10,7 +10,7 @@ Project #1: PROJECT DIY
 
 
 # Project Description
- Our project is to create an application for anyone who wants to learn DIY projects. The main feature of  our application is to present the "Project of the Day". The user can get project ideas from different categories. In addition, the user can save their favorite projects.Our live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.  You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
+ Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of  our application is to present the "Project of the Day". The user can get project "how to" videosfrom different categories. In addition, the user can save their favorite projects to their favorites.Our live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.  You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
 
 # Table of Contents
 <nav>
@@ -119,7 +119,7 @@ Explain exactly what
 <li>Presentation: </li>
 
 ## Challenges
-Some challenges we faced was when we tried to figure how to use the api for Pinterest, it was a long process where we had to fill out an application and get approved. We had help from the TAs and Brian, but were were unnsuccessful. We had applied again to Pinterest letting them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. We didn't want to just wait around and not continue on the project, so we looked for another alternative and found DevianArt. It took awile to .... 
+Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out an applications and get approved. We got some help from the TAs and Brian, however, we were unsuccessful in being able to easily use the apis. We had applied again to Pinterest letting them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. We didn't want to just wait around and not continue on the project, so we looked for another alternative and found DevianArt. It took awile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. We had to shift our focus on the "Ideas" section and change it to "Hotspots".  
 
 
 

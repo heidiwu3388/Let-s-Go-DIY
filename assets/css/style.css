@@ -58,3 +58,9 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+
+/* disabled favorite button */
+.favorite-button:disabled {
+    color: red;
+}

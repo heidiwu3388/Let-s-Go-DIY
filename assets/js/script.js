@@ -9,7 +9,7 @@ let allFavorites = [];
  }
 
 // check if the vedioId is in the allFavorites array
- function isProjectInFavorite(vedioId) {
+function isProjectInFavorite(vedioId) {
     for (let i=0; i<allFavorites.length; i++) {
         if (vedioId === allFavorites[i].id){
             return true;
@@ -17,64 +17,64 @@ let allFavorites = [];
     }
     return false;
  }
-
-function getProjectIdeas(cat) {
-    // build the YouTube search API URL
-    urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search`
-    urlYouTubeSearch += `?key=${apiKeyYouTube}`
-    urlYouTubeSearch += `&q=${cat.trim().replace(" ", "+")}+DIY+HowTo`
-    urlYouTubeSearch += `&kind=video`
-    urlYouTubeSearch += `&part=snippet`
-    urlYouTubeSearch += `&maxResults=6`
-    urlYouTubeSearch += `&order=viewCount`;
-
-    fetch(urlYouTubeSearch)
-    .then(function(response){
-        return response.json();
-    })
-    .then (function(data){
-        template = ``;
-        for (let i=0; i<data.items.length; i++) {
-            // get title and video id from data
-            let videoId = data.items[i].id.videoId;
-            let videoTitle = data.items[i].snippet.title;
-            // set up the disableFavorite string
-            let disableFavorite;
-            if (isProjectInFavorite(videoId)) {
-                disableFavorite = "disabled";
-                heartEmoji = "❤️";
-                buttonText ="Added"
-            } 
-            else {
-                disableFavorite = "";
-                heartEmoji = "🤍";
-                buttonText ="Favorite Me"
-            }
-            console.log(i, disableFavorite);
-            // build HTML to display the title, the video and the favorite button
-            template += `
+ 
+ function getProjectIdeas(cat) {
+     // build the YouTube search API URL
+     urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search`
+     urlYouTubeSearch += `?key=${apiKeyYouTube}`
+     urlYouTubeSearch += `&q=${cat.trim().replace(" ", "+")}+DIY+HowTo`
+     urlYouTubeSearch += `&kind=video`
+     urlYouTubeSearch += `&part=snippet`
+     urlYouTubeSearch += `&maxResults=6`
+     urlYouTubeSearch += `&order=viewCount`;
+     fetch(urlYouTubeSearch)
+     .then(function(response){
+console.log(response);
+         return response.json();
+        })
+        .then (function(data){
+console.log(data);
+            template = ``;
+            for (let i=0; i<data.items.length; i++) {
+                // get title and video id from data
+                let videoId = data.items[i].id.videoId;
+                let videoTitle = data.items[i].snippet.title;
+                // set up the disableFavorite string
+                if (isProjectInFavorite(videoId)) {
+                    var disableFavorite = "disabled";
+                    var heartEmoji = "❤️";
+                    var buttonText ="Added"
+                } 
+                else {
+                    var disableFavorite = "";
+                    var heartEmoji = "🤍";
+                    var buttonText ="Favorite Me"
+                }
+                console.log("buttonText: ", buttonText);
+                // build HTML to display the title, the video and the favorite button
+                template += `
                 <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
-                    <div class="text-dark fs-5 my-2">${videoTitle}</div>
-                    <div class="iframe-container">
-                        <iframe class="mb-1"
-                            width="480" 
-                            height="270" 
-                            src="https://www.youtube.com/embed/${videoId}" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <button type="button" class="btn btn-outline-light mt-1 mb-5" data-video-id="${videoId}" data-video-title="${videoTitle}" ${disableFavorite}>
-                        ${heartEmoji}&nbsp&nbsp${buttonText}
-                    </button>
+                <div class="text-dark fs-5 my-2">${videoTitle}</div>
+                <div class="iframe-container">
+                <iframe class="mb-1"
+                width="480" 
+                height="270" 
+                src="https://www.youtube.com/embed/${videoId}" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
                 </div>
-            `;   
-        } 
-        projectContainerEl.innerHTML = template;   
-    })
-}
-
+                <button type="button" class="btn btn-outline-light mt-1 mb-5 favorite-button" data-video-id="${videoId}" data-video-title="${videoTitle}" ${disableFavorite}>
+                ${heartEmoji}&nbsp&nbsp${buttonText}
+                </button>
+                </div>
+                `;   
+            } 
+            projectContainerEl.innerHTML = template;   
+        })
+    }
+    
 // call init() to load local storage (MyFavoriteProjects) into array allFavorites
 init();
 
@@ -100,8 +100,9 @@ projectContainerEl.addEventListener("click", function(event){
         allFavorites.push(favorite);
         // store allFavorites to local storage
         localStorage.setItem("MyFavoriteProjects", JSON.stringify(allFavorites));
-        // disable the favorite button
+        // disable the favorite button and change the button text
         event.target.setAttribute("disabled", "true");
+        event.target.textContent = "❤️  Added"
     }
 })
 

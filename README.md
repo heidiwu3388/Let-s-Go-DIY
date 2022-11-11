@@ -9,6 +9,7 @@ Project #1: PROJECT DIY
 
 
 
+
 # Project Description
  Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of  our application is to present the "Project of the Day". The user can get project "how to" videosfrom different categories. In addition, the user can save their favorite projects to their favorites.Our live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.  You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
 
@@ -26,7 +27,7 @@ Project #1: PROJECT DIY
              <li><a href="#Challenges">Challenges</a></li>
              <li><a href="#Successes">Successes</a></li>
              <li><a href="#Demo">Demo</a></li>
-        <li><a href="#Directions for Future Development"></a>Directions for Future Development</li>
+        <li><a href="#Directions for Future Development">Directions for Future Development</a></li>
         <li><a href="#Support">Support</a></li>
         <li><a href="#Credits">Credits</a></li>
         <li><a href="#Contributors">Contributors</a></li>
@@ -52,7 +53,7 @@ GIVEN I am using a application that provides a Project of the Day
 WHEN I open the application 
 THEN I see a video for the POD & My favorite project
 WHEN I select a category from the dropdown menu
-THEN I am presented with 5 DIY Projects with save to favorites button
+THEN I am presented with 6 DIY Projects with save to favorites button
 WHEN I click the favorites button/image on the project page
 THEN project will be saved to local storage
 WHEN Favorites button on Main page
@@ -64,8 +65,8 @@ THEN the favorite projects will persist
 
 
 <ul>
-<h3>Project of the Day</h3>
-    <h2>Project of the Day</h2>
+<h2>Project Ideas</h2>
+    <h3>Categories</h3>
      <li>Calligrpahy</li> 
      <li>Scrapbooking</li> 
      <li>Knitting</li> 

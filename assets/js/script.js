@@ -80,20 +80,20 @@ function getProjectIdeas(cat) {
         // build HTML to display the title, the video and the favorite button
         template += `
             <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
-            <div class="text-dark fs-5 my-2">${videoTitle}</div>
-            <div class="iframe-container">
-            <iframe class="mb-1"
-            width="480" 
-            height="270" 
-            src="https://www.youtube.com/embed/${videoId}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-            </iframe>
-            </div>
-            <button type="button" class="btn btn-outline-light mt-1 mb-5 favorite-button" data-video-id="${videoId}" data-video-title="${videoTitle}" ${disableFavorite}>
-            ${heartEmoji}&nbsp&nbsp${buttonText}
-            </button>
+              <div class="text-dark fs-5 my-2">${videoTitle}</div>
+              <div class="iframe-container">
+                <iframe class="mb-1"
+                  width="480" 
+                  height="270" 
+                  src="https://www.youtube.com/embed/${videoId}" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <button type="button" class="btn btn-outline-light mt-1 mb-5 favorite-button" data-video-id="${videoId}" data-video-title="${videoTitle}" ${disableFavorite}>
+              ${heartEmoji}&nbsp&nbsp${buttonText}
+              </button>
             </div>
         `;
       }

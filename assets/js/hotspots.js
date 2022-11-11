@@ -1,13 +1,14 @@
 // select elements and store them in variables
 let categoryContainerEl = document.querySelector("#category-buttons-container");
 let hotSpotsEl = document.querySelector("#hotSpots");
-const searchBar = document.getElementById("search");
+let searchForm = document.querySelector("#searchForm");
+let searchInput= document.querySelector("#searchInput");
 
 
   function getHotspot(cat) {
       console.log("inside getHotpot(", cat, ")");
       // *** compose API URL
-      let apiUrl = `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=Arts&location=denver&categories=Art&limit=6&image_url&name&rating`;
+      let apiUrl = `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${cat.trim().replace(" ", "+")}&location=San Diego&categories=${cat.trim().replace(" ", "+")}&limit=6&image_url&name&rating`;
       var bearer =
         "Bearer " +
         "VQRWH_9SUAQdwLRaHUYIClL3GJ_Aqg6cjrxxN6tEUT6zC2J_2KbnyuiO0euxKAjx-vYckwlwynJcIGxBgpiz4Geih0KRFxh9oFOKt0jklgA9qlTQe8JL0lW3_dNpY3Yx";
@@ -22,29 +23,28 @@ const searchBar = document.getElementById("search");
         .then(function (data) {
           console.log(data);
           //     // *** store required data in variables
-          // var businesses = 
-          var name = data.businesses[0].name;    
-          var rating = data.businesses[0].rating;
-          var location = data.businesses[0].location.display_address;
-          var imageUrl = data.businesses[0].image_url;
-          var url = data.businesses[0].url;
+        template = ``;
+        console.log(data.businesses.length);
+        for (let i = 0; i < data.businesses.length; i++) {
+          var name = data.businesses[i].name;    
+          var rating = data.businesses[i].rating;
+          var location = data.businesses[i].location.display_address;
+          var imageUrl = data.businesses[i].image_url;
+          var url = data.businesses[i].url;
           console.log(name,rating,location,imageUrl,url)
               // *** build HTML and display project ideas
-          template = `
-            <div class="row d-flex flex-row align-items-start justify-content-start">
-              <div class="col-12 col-md-6 col-lg-4">
-                  <div class="idea-container border border-danger my-2 width="480">
-                  <a hred="${url}">
-                    <image src="${imageUrl}" width="580" height="450">
-                  </a>
-                  <div><strong>${name}</strong></div>
-                  <div>Rating: ${rating} ⭐</div>
-                  <div>${location}</div>
-                  </div>
-              </div>
-            </div>
+          template += `            
+            <div class="col-12 col-md-6 fs-5 p-3">                
+                <a href="${url}">
+                  <image src="${imageUrl}" height="580" width="500">
+                </a>
+                <div><strong>${name}</strong></div>
+                <div>Rating: ${rating} ⭐</div>
+                <div>${location}</div>                
+            </div>            
           `;               
-          hotSpotsEl.innerHTML = template;             
+          hotSpotsEl.innerHTML = template;
+        }               
         });
     }
 
@@ -67,8 +67,9 @@ categoryContainerEl.addEventListener("click", function(event){
     getHotspot(category);
 });
 
-// Adding a search bar for user to search location
-searchBar.addEventListener('keyup', (e) => {
-  console.log(e.target.value)
-})
+// Adding a search bar for user to search location (future development)
+// searchForm.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   console.log(searchInput.value);
+// })
 

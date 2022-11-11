@@ -47,64 +47,33 @@
             <div class="row d-flex align-items-stretch">
                 <!-- Catogory buttons -->
                 <div class="col-sm-12 col-md-4 d-flex flex-column category-section">                    
-                    <h3 class="text-dark px-3 m-3">Click a Category from below find Art Hotspots:</h3>
-                    <!-- adding search bar to search locations -->     
-                    <div class="search-wrapper d-flex flex-column px-3 m-3">
-                        <label for="search">Search Location</label>
-                        <input type="search" id="search" placeholder="Search...">
-                        <button type="button" class="btn btn-dark my-1">Search</button>
-                    </div>               
+                    <h3 class="text-dark px-3 m-3">Click a Category from below to find Art Hotspots in San Diego:</h3>
+                    <!-- adding search bar to search locations for future development     
+                    <form class="search-wrapper d-flex flex-column px-3 m-3" id="searchForm">                        
+                        <input type="search" id="searchInput" placeholder="Search Location">
+                        <button type="submit" class="btn btn-dark my-1">Search</button>
+                    </form>                -->
                     <div class="d-flex flex-column px-3 m-3" id="category-buttons-container">
                         <button type="button" class="btn btn-primary my-1">Art Stores</button>
                         <button type="button" class="btn btn-secondary my-1">Art Galleries</button>
                         <button type="button" class="btn btn-success my-1">Art Museums</button>
                         <button type="button" class="btn btn-danger my-1">Art Class Fun</button>
-                        <!-- <button type="button" class="btn btn-warning my-1">Drawing</button>
-                        <button type="button" class="btn btn-primary my-1">Painting</button>
-                        <button type="button" class="btn btn-secondary my-1">Candles</button>
-                        <button type="button" class="btn btn-dark my-1">Polymer Clay</button>
-                        <button type="button" class="btn btn-danger my-1">Metal Stamping</button>
-                        <button type="button" class="btn btn-success my-1">Crocheting</button> -->
                     </div>
                 </div>
                 <!-- Project Ideas -->
                 <div class="col-sm-12 col-md-8 offset-md-0 d-flex flex-column justify-content-start align-items-center">
-                    <h1 class="text-dark my-5 main-topic">Ideas for You :</h1>
-                    <div id="hotSpots">
-                        <!-- <div class="row d-flex flex-row align-items-start justify-content-start">
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="idea-container border border-danger my-2">
-                                    Idea 1    
+                    <div class="container-fluid">
+                        <div class="row d-flex align-items-stretch">
+                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="text-dark my-5 main-topic">Art Hotspots</h1>
+                                <div class="contain-fluid w-100">
+                                    <div class="row d-flex flex-row align-items-end justify-content-around" id="hotSpots">
+                                        <!-- dynamically generated HTML goes here -->  
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 ">
-                                <div class="idea-container border border-danger my-2">
-                                    Idea 2 
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="idea-container border border-danger my-2">
-                                    Idea 3    
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="idea-container border border-danger my-2">
-                                    Idea 4    
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="idea-container border border-danger my-2">
-                                    Idea 5    
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4">
-                                <div class="idea-container border border-danger my-2">
-                                    Idea 6    
-                                </div>
-                            </div> -->
                         </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
                 
             </div>

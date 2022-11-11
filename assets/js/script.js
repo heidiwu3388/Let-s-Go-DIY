@@ -1,6 +1,6 @@
 // set up constants and variables
-const apiKeyYouTube = "AIzaSyBT5Jp3mNr4LyeII6cjqzdru5xFWPs-Prw";
-// const apiKeyYouTube = "AIzaSyAQxGId4aYD4iuVjtUwo3TkS3JrZsfG2o0";
+// const apiKeyYouTube = "AIzaSyBT5Jp3mNr4LyeII6cjqzdru5xFWPs-Prw";
+const apiKeyYouTube = "AIzaSyAQxGId4aYD4iuVjtUwo3TkS3JrZsfG2o0";
 const errMsgModal = new bootstrap.Modal("#errMsgModal");
 let errMsgBodyEl = document.querySelector("#errMsg");
 let categoryContainerEl = document.querySelector("#category-buttons-container");

@@ -3,6 +3,7 @@ let categoryContainerEl = document.querySelector("#category-buttons-container");
 let hotSpotsEl = document.querySelector("#hotSpots");
 let searchForm = document.querySelector("#searchForm");
 let searchInput= document.querySelector("#searchInput");
+let hotspotCategoryEl= document.querySelector("#hotspot-category");
 
 
 function getHotspot(cat) {
@@ -22,21 +23,22 @@ function getHotspot(cat) {
     })
     .then(function (data) {
       console.log(data);
-      //     // *** store required data in variables
+    // display selected category at the message area
+    hotspotCategoryEl.textContent = `( ${cat} )`;
     template = ``;
     console.log(data.businesses.length);
     for (let i = 0; i < data.businesses.length; i++) {
       var name = data.businesses[i].name;    
-      var rating = data.businesses[i].rating;
       var location = data.businesses[i].location.display_address;
       var imageUrl = data.businesses[i].image_url;
       var url = data.businesses[i].url;
+      var rating = data.businesses[i].rating;
       console.log(name,rating,location,imageUrl,url)
-          // *** build HTML and display project ideas
+      // *** build HTML and display hotspot suggestions
       template += `            
         <div class="col-12 col-md-6 fs-5 pb-5 d-flex flex-column align-items-start">                
           <div class="image-container">
-            <a href="${url}">
+            <a href="${url}" target="_blank">
               <img src="${imageUrl}">
             </a>
           </div>               

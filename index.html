@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <!-- for bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -25,9 +24,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid d-flex flex-row align-items-start mt-3">
           <a class="navbar-brand fs-1 me-5 " href="#">Let's Go DIY !!!</a>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button> -->
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -47,14 +46,14 @@
             <div class="row d-flex align-items-stretch">
                 <!-- Catogory buttons -->
                 <div class="col-sm-12 col-md-4 d-flex flex-column category-section">
-                    <h3 class="text-dark px-3 m-3">Click a Category from below to get more project ideas:</h3>
+                    <h3 class="text-dark px-3 m-3">Click a category from below to get project ideas:</h3>                  
                     <div class="d-flex flex-column px-3 m-3" id="category-buttons-container">
                         <button type="button" class="btn btn-primary my-1">Calligraphy</button>
                         <button type="button" class="btn btn-secondary my-1">Scrapbooking</button>
                         <button type="button" class="btn btn-success my-1">Knitting</button>
                         <button type="button" class="btn btn-danger my-1">Jewelry Making</button>
                         <button type="button" class="btn btn-warning my-1">Drawing</button>
-                        <button type="button" class="btn btn-primary my-1">Painting</button>
+                        <button type="button" class="btn btn-primary my-1">Resin</button>
                         <button type="button" class="btn btn-secondary my-1">Candles</button>
                         <button type="button" class="btn btn-dark my-1">Polymer Clay</button>
                         <button type="button" class="btn btn-danger my-1">Metal Stamping</button>
@@ -63,63 +62,32 @@
                 </div>
                 <!-- YouTube -->
                 <div class="col-sm-12 col-md-8 offset-md-0 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="text-dark my-5 main-topic">Project of the Day :</h1>
-                    <div id="iframe-container">
-                        <iframe class="mb-5"
-                            width="480" 
-                            height="270" 
-                            src="https://www.youtube.com/embed/p_R1UDsNOMk" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+                    <h1 class="text-dark mt-5 main-topic">Project Ideas:</h1>
+                    <h2 class="text-dark" id="message">
+                        <!-- dynamically generated HTML goes here -->                        
+                    </h2>
+                    <div class="row d-flex align-items-end" id="project-container">
+                            <!-- dynamically generated HTML goes here -->
                     </div>
                 </div>
                 
             </div>
         </div>
-        <!-- Go to Favorite -->
-        <!-- <div class="row">
-            <div class="col-12 min-vh-20 d-flex flex-column">
-                <a href="#" class="link-danger">Favorites link</a> heart icon as a button
-                <a href="favorites.html">
-                    <div class="" id="btn-favorites">
-                        Click here to see your Favorites
-                    </div>
-                </a>
-                    
-            </div>
-        </div> -->
     </main>
     <footer>
         <div class="d-flex flex-column justify-content-between">
             <h3 class="text-center m-5 fst-italic">Contact Us and Share Your Projects!</h3>
-            <div class="d-flex flex-row justify-content-around h-auto mb-5 contacts-links" id="Contact Me">
-                <!-- <a href="#777-777-777"><i class="fa fa-phone" style="font-size:48px;color:black"></i> -->
+            <div class="d-flex flex-row justify-content-around h-auto mb-5" id="Contact Me">
                 <a href="#mailto:hannahheidimarvin@gmail.com">
                     <i class="fa fa-envelope" style="font-size:48px;color:green"></i>
                 </a>
                 <a href="#https://github.com/hannybear88">
                     <i class="fa fa-github fa-3x" style="font-size: 48px; color: black"></i>
                 </a>
-
                 <a href="#https://twitter.com/DIY_Projects_22">
                     <i class="fa fa-twitter-square" style="font-size:48px;color:lightblue"></i>
                 </a>
-
-                <a href="#https://joinmastodon.org/servers">
-                    <i class="fab fa-mastodon fa-3x" style = "background-color: rgb(54,135,202);color:rgb(222, 231, 238);"></i>
-                </a>
-
-                <a href="https://etsy.com">
-                    <i class="fa fa-etsy" aria-hidden="true"; style="font-size: 42px; width:auto; background-color:rgb(255, 111, 8); color: white"></i>
-                </a>
-                
-                <a href="#https://www.devianart.com">
-                    <i class="fa fa-deviantart fa-3x" style = background-color:black;color:rgb(10,181,10);" aria-hidden="true"></i>
-                </a>
-
-                <a href="#https://www.pinterest.com/in/hannahhedidimarvin/">
+                 <a href="#https://www.pinterest.com/in/hannahhedidimarvin/">
                     <i class="fa fa-pinterest" style="font-size:48px;color:red"></i>
                 </a>
                 <a href="#https://www.reddit.com/">
@@ -128,78 +96,23 @@
                 <a href="#discord.com/">
                     <i class="fab fa-discord" style="font-size:48px;color:rgb(183, 0, 255)"></i>
                 </a>
-                <!-- <i class="fab fa-discord' style='font-size:48px;color:rgb(113, 83, 195)"></i> -->
             </div>
         </div>
-    </footer>                    
+    </footer>   
+    <!-- Modal -->
+    <div class="modal fade" id="errMsgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Error Message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="errMsg">
+            ...
+            </div>
+        </div>
+        </div>
+    </div>                 
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
-                                    
-                                    
-                 
-                    <!--fa fa spinner and fa fa heart beat -->
-                    
-                    <!-- <div class="fa-3x">
-                        <i class="fa-solid fa-spinner fa-spin-pulse" id="In progress"></i>
-                    </div>
-                    
-                    <div class="fa-3x">
-                        <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;" id="heart beat"></i>
-                    </div>
-                    
-                    <div class="background-image">
-                        <div class="quote">
-                            <blockquote cite = "https://masterpiecesociety.com/100-quotes-art-creativity/#:~:text=%E2%80%9CEvery%20artist%20was%20first%20an,and%20torment.%E2%80%9D%20%E2%80%93%20Claude%20Monet">
-                                
-                                “Every artist was first an amateur.” – Ralph Waldo Emerson
-                            </blockquote>
-                        </div>
-                    </div>
-                    
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <form>
-                        Username: <input type = "text" name = "Name" placeholder = "Username"> <br><br>
-                        Password: <input type = "Password" name = "Password" placeholder = "Password"><br><br>
-                        Favorite Color: <input type = "Color" name="Color"><br><br>
-                        Birthday: <input type = "date" name="birthday"><br><br>
-                    </form> -->
-                    
-                    <!-- <input type="text" id="comment-box" placeholder="Enter comment">
-                        <button id="post">Post</button> -->
-                        
-                        <!-- <div class="container">
-                            <h2>Leave us a comment</h2>
-                            <form>
-                                <textarea id="" placeholder="Add Your Comment" value=" "></textarea>
-                                <div class="btn">
-                                    <input id="submit" type="submit" value="Comment">
-                                    <button id="clear">  
-                                        &#128591;</button>
-                                    </div> 
-                                </form>
-                            </div>
-                            <div class="comments">
-                                <h2>Comments</h2>
-                                <div id="comment-box">
-                                </div>
-                            </div>
-                        -->
-                        
-                        <!-- <div class="postcomment">
-                            <FORM>
-                                <br>Name:</b> <?php echo $_POST['name']; ?> <INPUT type="text" name="name">
-                                    <br>E-Mail:</b> <?php echo $_POST['email']; ?> <INPUT type="text" name="email">
-                                        <br>Subject:</b> <?php echo $_POST['subject']; ?> <INPUT type="text" name="subject">
-                                            <br>Comment:</b> <?php echo $_POST['comment']; ?> <TEXTAREA type="text" name="comment"></TEXTAREA>
-                                        </FORM> -->
-                                                                           
-                                    
-                                    
-                                    
-                                    <!-- <script src="https://apis.google.com/js/platform.js"></script>
-                                        
-<div class="g-ytsubscribe" data-channel="AllAboutArt" data-layout="default" data-count="default"></div> -->

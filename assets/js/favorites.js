@@ -1,6 +1,6 @@
 // get html elements and store them in variables 
 let favoritesContainerEl = document.querySelector("#favorites-container");
-let allFavorites = JSON.parse(localStorage.getItem("MyFavoriteProjects"));
+let allFavorites = JSON.parse(localStorage.getItem("MyFavoriteProjects") || "[]" );
 
 // render HTML to display favorites from the array allFavorities
 function renderFavorite(){

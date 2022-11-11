@@ -7,7 +7,6 @@ let hotspotCategoryEl= document.querySelector("#hotspot-category");
 
 
 function getHotspot(cat) {
-  console.log("inside getHotpot(", cat, ")");
   // *** compose API URL
   let apiUrl = `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${cat.trim().replace(" ", "+")}&location=San Diego&categories=${cat.trim().replace(" ", "+")}&limit=6&image_url&name&rating`;
   var bearer =
@@ -17,23 +16,21 @@ function getHotspot(cat) {
   fetch(apiUrl, {
     headers: { Authorization: bearer },
   })
-    .then(function (response) {
-      console.log(response);
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
+  .then(function (response) {
+    console.log(response);
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
     // display selected category at the message area
     hotspotCategoryEl.textContent = `( ${cat} )`;
     template = ``;
-    console.log(data.businesses.length);
     for (let i = 0; i < data.businesses.length; i++) {
       var name = data.businesses[i].name;    
       var location = data.businesses[i].location.display_address;
       var imageUrl = data.businesses[i].image_url;
       var url = data.businesses[i].url;
       var rating = data.businesses[i].rating;
-      console.log(name,rating,location,imageUrl,url)
       // *** build HTML and display hotspot suggestions
       template += `            
         <div class="col-12 col-md-6 fs-5 pb-5 d-flex flex-column align-items-start">                
@@ -49,7 +46,7 @@ function getHotspot(cat) {
       `;               
       hotSpotsEl.innerHTML = template;
     }               
-    });
+  });
 }
 
 //when user click on a category button 

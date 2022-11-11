@@ -8,6 +8,7 @@ let projectContainerEl = document.querySelector("#project-container");
 let messageEl = document.querySelector("#message");
 let allFavorites = [];
 
+// get favorite list from local storage and store it in the array allFavorites
 function init() {
   allFavorites = JSON.parse(localStorage.getItem("MyFavoriteProjects") || "[]");
 }
@@ -22,28 +23,25 @@ function isProjectInFavorite(vedioId) {
   return false;
 }
 
+// get project ideas from YouTube by API call
 function getProjectIdeas(cat) {
   // build the YouTube search API URL
-  urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search`;
-  urlYouTubeSearch += `?key=${apiKeyYouTube}`;
-  urlYouTubeSearch += `&q=${cat.trim().replace(" ", "+")}+DIY+HowTo`;
-  urlYouTubeSearch += `&kind=video`;
-  urlYouTubeSearch += `&part=snippet`;
-  urlYouTubeSearch += `&maxResults=6`;
-  urlYouTubeSearch += `&order=viewCount`;
-  urlYouTubeSearch += `&safeSearch=strict`;
-  urlYouTubeSearch += `&type=video`;
-  urlYouTubeSearch += `&videoEmbeddable=true`;
-  urlYouTubeSearch += `&videoDuration=short`;
-  urlYouTubeSearch += `&publishedAfter=2015-01-01T00:00:00Z`;
-  //   urlYouTubeSearch += `&videoDimension=3d`;
-//   urlYouTubeSearch += `&videoDefinition=high`;
-
-  
-
+  urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search`
+    + `?key=${apiKeyYouTube}`
+    + `&q=${cat.trim().replace(" ", "+")}+DIY+HowTo`
+    + `&kind=video`
+    + `&part=snippet`
+    + `&maxResults=6`
+    + `&order=viewCount`
+    + `&safeSearch=strict`
+    + `&type=video`
+    + `&videoEmbeddable=true`
+    + `&videoDuration=short`
+    + `&publishedAfter=2015-01-01T00:00:00Z`;
 
   // initialize error 
   let ok = true;
+  // get data from YouTube API
   fetch(urlYouTubeSearch)
     .then(function (response) {
       console.log(response);

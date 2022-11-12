@@ -34,12 +34,6 @@ Project #1: PROJECT DIY
     </ol>
 </nav>
 
-# How to Use the Project
-
-<!-- <a href= https://hannybear88.github.io/Project-1-Project-DIY/>Click here</a> to be directed straight to the deployed application
-
-<img src="./assets/images/hannah-chung-professional-portfolio-screenshot.png" />  -->
-
 
 # User-Story 
 
@@ -49,24 +43,84 @@ AND find art hotspots
 SO THAT I can learn to do projects, buy supplies, and share my projects
 
 
-# Acceptance Criteria
+ # How to Use the Project Acceptance Criteria
 
-GIVEN I am using a application that provides DIY projects and art hotspots suggestions
+<!-- <a href= https://hannybear88.github.io/Project-1-Project-DIY/>Click here</a> to be directed straight to the deployed application
+
+<img src="./assets/images/hannah-chung-professional-portfolio-screenshot.png" />  -->
+
+GIVEN I am using a application that provides DIY project ideas, art hotspots suggestions, and my saved favorites
+<img src="/assets/images/Project-1-Project-DIY_Project_Ideas_Screenshot.png" /> <br>
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Screenshot.png" /> <br>
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Screenshot.png" /> <br>
+
+
 WHEN I open the application 
 THEN I see a list of categories for DIY project ideas
-WHEN I select a category from the list
+<img src="/assets/images/Project-1-Project-DIY_Homepage.png" /> <br>
+
+WHEN I click a category from the list
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Categories.png" /> <br>
+
+
 THEN I am presented with 6 DIY Projects with a "favorite me" button
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Calligraphy.png" />
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Scrapbooking.png" />
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Knitting.png" />
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Jewelry_Making.png" />
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Drawing.png" />
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Resin.png" />
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Candles.png" />
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Polymer_Clay.png" />
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Metal_Stamping.png" />
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Crocheting.png" />
+
+
 WHEN I click the "favorite me" button on the selected project
 THEN the project will be saved to local storage
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Calligraphy.Favorited.png.png" />
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Scrapbooking.Favorited.png" />
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Knitting.Favorited.png" />
+
+
 WHEN I click on "Favorites" on the nav bar
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Page.png" /><br>
+
 THEN I can see my favorite projects
+<img src="/assets/images/Project-1-Project-DIY_Saved_Favorites.png" />
+
 WHEN I refresh the page
 THEN the favorite projects will persist
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Page_Save_Persists_After_Refreshing.Favorited.gif" />
+
+WHEN I click the "remove me" button 
+THEN the video selected to be removed is removed from the "Favorites" page
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Page_Selected_Favorite_Removed.gif" />
+
 WHEN I click on the "Hotspots" on the nav bar
 THEN I see a list of "art hotspot categories"
-WHEN I click on a category 
-THEN I am presented with 6 hotspots in San Diego
+<img src="/assets/images/Project-1-Project-DIY_Hotspots_Main_Page.png" /><br>
 
+WHEN I click on a category 
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Art_Hotspots_Categories.png" /><br>
+
+THEN I am presented with 6 hotspots in San Diego 
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Stores_Screenshot.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Galleries_Screenshot.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Museums_Screenshot.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Class_Fun_Screenshot.png" /><br>
 
 # Features
 

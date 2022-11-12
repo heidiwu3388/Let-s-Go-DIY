@@ -118,12 +118,12 @@ THEN I am presented with 6 hotspots in San Diego
     <li>Vanilla Javascript</li> or
     <li>Web API</li>
     <li>Third Party API</li>
-    <li>web Server API</li> 
+    <li>Web Server API</li> 
 </ul>
 <ul>
     <h4>APIs Used</h4>
     <li>Youtube</li>
-    <li>Devian Art</li>
+    <li>Yelp</li>
 </ul>
 
 
@@ -135,7 +135,7 @@ THEN I am presented with 6 hotspots in San Diego
 
 
 ## Challenges
-Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we waiting for a response from Reddit, we looked for another alternative and found Marvin thought of DevianArt. It took awile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and change it to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led in the right direction on how to fix the issue. 
+Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we waiting for a response from Reddit, we looked for another alternative and found Marvin thought of DevianArt. It took awhile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and change it to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led in the right direction on how to fix the issue.Another issue that we had encountered was not being able to put in a search bar. Due to not having enough time, we had decided to put it as part of a future development.
 
 
 

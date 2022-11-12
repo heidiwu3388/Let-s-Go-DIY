@@ -1,6 +1,6 @@
 // set up constants and variables
-const apiKeyYouTube = "AIzaSyBT5Jp3mNr4LyeII6cjqzdru5xFWPs-Prw";
-// const apiKeyYouTube = "AIzaSyAQxGId4aYD4iuVjtUwo3TkS3JrZsfG2o0";
+// const apiKeyYouTube = "AIzaSyBT5Jp3mNr4LyeII6cjqzdru5xFWPs-Prw";
+const apiKeyYouTube = "AIzaSyAQxGId4aYD4iuVjtUwo3TkS3JrZsfG2o0";
 const errMsgModal = new bootstrap.Modal("#errMsgModal");
 let errMsgBodyEl = document.querySelector("#errMsg");
 let categoryContainerEl = document.querySelector("#category-buttons-container");
@@ -8,6 +8,7 @@ let projectContainerEl = document.querySelector("#project-container");
 let messageEl = document.querySelector("#message");
 let allFavorites = [];
 
+// get favorite list from local storage and store it in the array allFavorites
 function init() {
   allFavorites = JSON.parse(localStorage.getItem("MyFavoriteProjects") || "[]");
 }
@@ -22,28 +23,25 @@ function isProjectInFavorite(vedioId) {
   return false;
 }
 
+// get project ideas from YouTube by API call
 function getProjectIdeas(cat) {
   // build the YouTube search API URL
-  urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search`;
-  urlYouTubeSearch += `?key=${apiKeyYouTube}`;
-  urlYouTubeSearch += `&q=${cat.trim().replace(" ", "+")}+DIY+HowTo`;
-  urlYouTubeSearch += `&kind=video`;
-  urlYouTubeSearch += `&part=snippet`;
-  urlYouTubeSearch += `&maxResults=6`;
-  urlYouTubeSearch += `&order=viewCount`;
-  urlYouTubeSearch += `&safeSearch=strict`;
-  urlYouTubeSearch += `&type=video`;
-  urlYouTubeSearch += `&videoEmbeddable=true`;
-  urlYouTubeSearch += `&videoDuration=short`;
-  urlYouTubeSearch += `&publishedAfter=2015-01-01T00:00:00Z`;
-  //   urlYouTubeSearch += `&videoDimension=3d`;
-//   urlYouTubeSearch += `&videoDefinition=high`;
-
-  
-
+  urlYouTubeSearch = `https://www.googleapis.com/youtube/v3/search`
+    + `?key=${apiKeyYouTube}`
+    + `&q=${cat.trim().replace(" ", "+")}+DIY+HowTo`
+    + `&kind=video`
+    + `&part=snippet`
+    + `&maxResults=6`
+    + `&order=viewCount`
+    + `&safeSearch=strict`
+    + `&type=video`
+    + `&videoEmbeddable=true`
+    + `&videoDuration=short`
+    + `&publishedAfter=2015-01-01T00:00:00Z`;
 
   // initialize error 
   let ok = true;
+  // get data from YouTube API
   fetch(urlYouTubeSearch)
     .then(function (response) {
       console.log(response);
@@ -80,20 +78,20 @@ function getProjectIdeas(cat) {
         // build HTML to display the title, the video and the favorite button
         template += `
             <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
-            <div class="text-dark fs-5 my-2">${videoTitle}</div>
-            <div class="iframe-container">
-            <iframe class="mb-1"
-            width="480" 
-            height="270" 
-            src="https://www.youtube.com/embed/${videoId}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-            </iframe>
-            </div>
-            <button type="button" class="btn btn-outline-light mt-1 mb-5 favorite-button" data-video-id="${videoId}" data-video-title="${videoTitle}" ${disableFavorite}>
-            ${heartEmoji}&nbsp&nbsp${buttonText}
-            </button>
+              <div class="text-dark fs-5 my-2">${videoTitle}</div>
+              <div class="iframe-container">
+                <iframe class="mb-1"
+                  width="480" 
+                  height="270" 
+                  src="https://www.youtube.com/embed/${videoId}" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <button type="button" class="btn btn-outline-light mt-1 mb-5 favorite-button" data-video-id="${videoId}" data-video-title="${videoTitle}" ${disableFavorite}>
+              ${heartEmoji}&nbsp&nbsp${buttonText}
+              </button>
             </div>
         `;
       }

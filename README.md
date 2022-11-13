@@ -34,12 +34,6 @@ Project #1: PROJECT DIY
     </ol>
 </nav>
 
-# How to Use the Project
-
-<!-- <a href= https://hannybear88.github.io/Project-1-Project-DIY/>Click here</a> to be directed straight to the deployed application
-
-<img src="./assets/images/hannah-chung-professional-portfolio-screenshot.png" />  -->
-
 
 # User-Story 
 
@@ -49,24 +43,86 @@ AND find art hotspots
 SO THAT I can learn to do projects, buy supplies, and share my projects
 
 
-# Acceptance Criteria
+ # How to Use the Project Acceptance Criteria
 
-GIVEN I am using a application that provides DIY projects and art hotspots suggestions
+<u><i><strong>Click on the image below</strong></i></u></a> to be directed straight to the deployed application
+<a href= "https://hannybear88.github.io/Project-1-Project-DIY/index.html"><img src="/assets/images/Let's_Go_DIY_Screenshot.png" alt = "direct link to deployed application" /></a>
+
+
+GIVEN I am using a application that provides DIY project ideas, art hotspots suggestions, and my saved favorites
+<img src="/assets/images/Project-1-Project-DIY_Project_Ideas_Screenshot.png" /> <br>
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Screenshot.png" /> <br>
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Screenshot.png" /> <br>
+
+
 WHEN I open the application 
 THEN I see a list of categories for DIY project ideas
-WHEN I select a category from the list
+<img src="/assets/images/Project-1-Project-DIY_Homepage.png" /> <br>
+
+WHEN I click a category from the list
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Categories.png" /> <br>
+
+
 THEN I am presented with 6 DIY Projects with a "favorite me" button
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Calligraphy.png" /><br>
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Scrapbooking.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Knitting.png" /><br>
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Jewelry_Making.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Drawing.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Resin.png" /><br>
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Candles.png" /><br>
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Polymer_Clay.png" /><br>
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Metal_Stamping.png" /><br>
+
+<img src="./assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Crocheting.png" /><br>
+
+
 WHEN I click the "favorite me" button on the selected project
 THEN the project will be saved to local storage
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Calligraphy.Favorited.png.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Scrapbooking.Favorited.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Project_Ideas_Category_Knitting.Favorited.png" /><br>
+
+
 WHEN I click on "Favorites" on the nav bar
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Page.png" /><br>
+
 THEN I can see my favorite projects
+<img src="/assets/images/Project-1-Project-DIY_Saved_Favorites.png" /><br>
+
 WHEN I refresh the page
 THEN the favorite projects will persist
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Page_Save_Persists_After_Refreshing.Favorited.gif" /><br>
+
+WHEN I click the "remove me" button 
+THEN the video selected to be removed is removed from the "Favorites" page
+<img src="/assets/images/Project-1-Project-DIY_Favorites_Page_Selected_Favorite_Removed.gif" /><br>
+
 WHEN I click on the "Hotspots" on the nav bar
 THEN I see a list of "art hotspot categories"
-WHEN I click on a category 
-THEN I am presented with 6 hotspots in San Diego
+<img src="/assets/images/Project-1-Project-DIY_Hotspots_Main_Page.png" /><br>
 
+WHEN I click on a category 
+<img src="/assets/images/Project-1-Project-DIY_Homepage_Art_Hotspots_Categories.png" /><br>
+
+THEN I am presented with 6 hotspots in San Diego 
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Stores_Screenshot.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Galleries_Screenshot.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Museums_Screenshot.png" /><br>
+
+<img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Class_Fun_Screenshot.png" /><br>
 
 # Features
 
@@ -115,15 +171,15 @@ THEN I am presented with 6 hotspots in San Diego
     <li>CSS3</li>
     <li>Bootstrap</li>
     <li>Moment.js</li>
-    <li>Vanilla Javascript</li> or
+    <li>Vanilla Javascript</li> 
     <li>Web API</li>
     <li>Third Party API</li>
-    <li>web Server API</li> 
+    <li>Web Server API</li> 
 </ul>
 <ul>
     <h4>APIs Used</h4>
     <li>Youtube</li>
-    <li>Devian Art</li>
+    <li>Yelp</li>
 </ul>
 
 
@@ -135,7 +191,7 @@ THEN I am presented with 6 hotspots in San Diego
 
 
 ## Challenges
-Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we waiting for a response from Reddit, we looked for another alternative and found Marvin thought of DevianArt. It took awile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and change it to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led in the right direction on how to fix the issue. 
+Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we waiting for a response from Reddit, we looked for another alternative and found Marvin thought of DevianArt. It took awhile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and change it to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led in the right direction on how to fix the issue.Another issue that we had encountered was not being able to put in a search bar. Due to not having enough time, we had decided to put it as part of a future development.
 
 
 

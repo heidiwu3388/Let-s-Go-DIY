@@ -17,7 +17,7 @@ Project #1: PROJECT DIY
 <nav>
     <ol>
         <li><a href="#User-Story">User Story</a></li>
-        <li><a href="#How to Use this Project and Acceptance Criteria">How to Use this Project and Acceptance Criteria</a></li>
+        <li><a href="#How-to-Use-this-Project-and-Acceptance-Criteria">How to Use this Project and Acceptance Criteria</a></li>
         <li><a href="#Motivation for Development">Motivation for Development</a></li>
          <li><a href="#Features">Features</a></li>
           <li><a href="#Process">Process</a></li>

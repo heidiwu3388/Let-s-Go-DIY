@@ -11,15 +11,14 @@ Project #1: PROJECT DIY
 
 
 # Project Description
- Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of our application is to present "Project Ideas" and provide "Art Hotspots". The user can get project "how to" videos from different categories. There are 10 categories and in each category there are 6 project ideas videos. There are also 4 categories in the Art Hotspots section and 6 hotspot locations in each category. In addition, the user can save their favorite projects to their favorites. The user's favorites is saved in local storage and it persists when the user clicks refresh. The user also has the option of removing a favorite from the favorites page. Our live page can be seen in the <a href="#Table of Contents">Table of Contents</a> section.  You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
+ Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of our application is to present "Project Ideas" and provide "Art Hotspots". The user can get project "how to" videos from different categories. There are 10 categories and in each category there are 6 project ideas videos. There are also 4 categories in the Art Hotspots section and 6 hotspot locations in each category. In addition, the user can save their favorite projects to their favorites. The user's favorites is saved in local storage and it persists when the user clicks refresh. The user also has the option of removing a favorite from the favorites page. You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
 
 # Table of Contents
 <nav>
     <ol>
-        <li><a href="#How to Use this Project">How to Use this Project</a></li>
-        <li><a href="#Motivation for Development">Motivation for Development</a></li>
         <li><a href="#User-Story">User Story</a></li>
-        <li><a href="#Acceptance Criteria">Acceptance Criteria</a></li>
+        <li><a href="#How to Use this Project and Acceptance Criteria">How to Use this Project and Acceptance Criteria</a></li>
+        <li><a href="#Motivation for Development">Motivation for Development</a></li>
          <li><a href="#Features">Features</a></li>
           <li><a href="#Process">Process</a></li>
             <li><a href="#Technology">Technology</a></li>
@@ -43,9 +42,10 @@ AND find art hotspots
 SO THAT I can learn to do projects, buy supplies, and share my projects
 
 
- # How to Use the Project Acceptance Criteria
+ # How to Use the Project and Acceptance Criteria
 
-<u><i><strong>Click on the image below</strong></i></u></a> to be directed straight to the deployed application
+<u><i><strong>Click on the image below</strong></i></u></a> to be directed straight to the deployed application. 
+<!-- Also, you must click on the this link <a href = "https://cors-anywhere.herokuapp.com/corsdemo">here</a>  right after clicking on the deployed link, to have temporary access to the CORS -->
 <a href= "https://hannybear88.github.io/Project-1-Project-DIY/index.html"><img src="/assets/images/Let's_Go_DIY_Screenshot.png" alt = "direct link to deployed application" /></a>
 
 
@@ -124,6 +124,10 @@ THEN I am presented with 6 hotspots in San Diego
 
 <img src="/assets/images/Project-1-Project-DIY_Art_Hotspots_Art_Class_Fun_Screenshot.png" /><br>
 
+# Motivation for Development
+The motivation for our development is that all our team members like to do DIY projects. During our first meeting we all bonded by sharing our different art projects. We have all had experiences where we needed DIY project ideas, and want to know where to go get inspirations!! That’s why we came up with this application to help you find DIY project ideas and search cool places for inspiration.
+
+
 # Features
 
 
@@ -148,18 +152,6 @@ THEN I am presented with 6 hotspots in San Diego
     <li>Art Class Fun</li>
 <h1>Favorites</h1>
 <li>User Favorites are Saved Here</li>
-<h3>Audience</h3>
-    <li>Age Group</li> 
-    <li>Skill Levels</li>
-<h3>Buttons</h3>
-    <li>Favorte button puts favorites in favorites page</li> 
-    <li>Remove button deletes that favorite from favorites page</li>
-   
-<h3>Local Storage</h3>
-    <li>Favorites projects buttons and page</li>
-    <li>Removed favorited projects button</li>
-    </ul> 
-
 
 
 # Process
@@ -170,11 +162,8 @@ THEN I am presented with 6 hotspots in San Diego
     <li>HTML5</li>
     <li>CSS3</li>
     <li>Bootstrap</li>
-    <li>Moment.js</li>
     <li>Vanilla Javascript</li> 
-    <li>Web API</li>
-    <li>Third Party API</li>
-    <li>Web Server API</li> 
+    <li>Server API</li> 
 </ul>
 <ul>
     <h4>APIs Used</h4>
@@ -184,14 +173,17 @@ THEN I am presented with 6 hotspots in San Diego
 
 
 ## Tasks and Roles
-<li>Front-End: Hannah, Heidi, and Marvin</li>
-<li>Back-End: Hannah, Heidi, and Marvin</li>
-<li>README: Hannah </li>
+<li>Research on other potential APIs: Heidi, Marvin, and Hannah</li>
+<li>Research on YouTube and Yelp APIs: Heidi, Marvin, and Hannah</li>
+<li>Project Ideas page: Heidi</li>
+<li>Hotspots Page: Marvin</li>
+<li>Favorites Page: Hannah</li>
+<li>README: Hannah, Heidi, and Marvin </li>
 <li>Presentation: Hannah, Heidi, and Marvin </li>
 
 
 ## Challenges
-Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we waiting for a response from Reddit, we looked for another alternative and found Marvin thought of DevianArt. It took awhile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and change it to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led in the right direction on how to fix the issue.Another issue that we had encountered was not being able to put in a search bar. Due to not having enough time, we had decided to put it as part of a future development.
+Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we were waiting for a response from Reddit, we looked for another alternative and we thought of DeviantArt. It took awhile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and we chose Yelp and changed "Ideas" to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led us in the right direction on how to fix the issue. Another issue that was encountered was displaying the YouTube videos using HTML iframe tag. Evyette helped us solved that problem. 
 
 
 
@@ -208,24 +200,18 @@ screenshots and video below
 <ul>
     <li>Create Your Own Username and Password</li>
     <li>Save in Progress Projects</li>
-      <li>Progression button leads to page</li>
-    <li>Shuffle POD DIY Projects</li>
-    <li>(shuffle button) leads to next project if they don't like the projet of the day already shown</li>
+    <li>Progression button leads to page</li>
     <li>Post Projects</li>
     <li>Comment on other users' Projects/Other users comment on your projects</li>
+    <li>Input Location for searching in Hotspots Page</li>
     <li>Add more DIY Categories</li>
-    <li>Use Pinterest API</li>
-    <li>Use Etsy API</li>
-    <li>Use Twitter API</li>
-    <li>Use Live Maps API</li>
+    <li>Use more APIs to get project ideas</li>
 </ul>
 
 
 # Support
-If you need extra support feel free to email us:
-<a href="mailto:hannahkchung88@gmail.com">email Hannah</a>
-<a href="heidiwu3388@yahoo.com">email Heidi</a>
-<a href="marvinjvelasco@gmail.com">emali Marvin</a>
+If you need extra support feel free to <a href="mailto:hannahheidimarvin@gmail.com">email us</a>
+
 
 
 # Credits

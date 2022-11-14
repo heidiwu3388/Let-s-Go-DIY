@@ -18,15 +18,15 @@ Project #1: PROJECT DIY
     <ol>
         <li><a href="#User-Story">User Story</a></li>
         <li><a href="#How-to-Use-this-Project-and-Acceptance-Criteria">How to Use this Project and Acceptance Criteria</a></li>
-        <li><a href="#Motivation for Development">Motivation for Development</a></li>
+        <li><a href="#Motivation-for-Development">Motivation for Development</a></li>
          <li><a href="#Features">Features</a></li>
           <li><a href="#Process">Process</a></li>
             <li><a href="#Technology">Technology</a></li>
-             <li><a href="#Tasks and Roles">Tasks and Roles</a></li>
+             <li><a href="#Tasks-and-Roles">Tasks and Roles</a></li>
              <li><a href="#Challenges">Challenges</a></li>
              <li><a href="#Successes">Successes</a></li>
              <li><a href="#Demo">Demo</a></li>
-        <li><a href="#Directions for Future Development">Directions for Future Development</a></li>
+        <li><a href="#Directions-for-Future-Development">Directions for Future Development</a></li>
         <li><a href="#Support">Support</a></li>
         <li><a href="#Credits">Credits</a></li>
         <li><a href="#Contributors">Contributors</a></li>

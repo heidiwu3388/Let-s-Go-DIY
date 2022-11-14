@@ -39,7 +39,7 @@ Project #1: PROJECT DIY
 AS an artist<br>
 I WANT some ideas for DIY projects<br>
 AND find art hotspots<br>
-SO THAT I can learn to do projects, save my projects, find hotspots, and buy supplies<br>
+SO THAT I can learn to do projects, save my favorites, find hotspots, and buy supplies<br>
 
 
  # How to Use this Project and Acceptance Criteria

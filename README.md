@@ -11,7 +11,7 @@ Project #1: PROJECT DIY
 
 
 # Project Description
- Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of our application is to present "Project Ideas" and provide "Art Hotspots". The user can get project "how to" videos from different categories. There are 10 categories and in each category there are 6 project ideas videos. There are also 4 categories in the Art Hotspots section and 6 hotspot locations in each category. In addition, the user can save their favorite projects to their favorites. The user's favorites is saved in local storage and it persists when the user clicks refresh. The user also has the option of removing a favorite from the favorites page. You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
+ Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of our application is to present "Project Ideas" and provide "Art Hotspots". The user can get project "how to" videos from different categories. There are 10 categories and in each category there are 6 project ideas videos. The videos provided are the most viewed from YouTube. There are also 4 categories in the Art Hotspots section and 6 hotspot locations that are the highest rated from Yelp in each category. In addition, the user can save their favorite projects to their favorites. The user's favorites is saved in local storage and it persists when the user clicks refresh. The user also has the option of removing a favorite from the favorites page. You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
 
 # Table of Contents
 <nav>
@@ -36,10 +36,10 @@ Project #1: PROJECT DIY
 
 # User-Story 
 
-AS an artist
-I WANT some ideas for DIY projects 
-AND find art hotspots
-SO THAT I can learn to do projects, buy supplies, and share my projects
+AS an artist<br>
+I WANT some ideas for DIY projects<br>
+AND find art hotspots<br>
+SO THAT I can learn to do projects, save my projects, find hotspots, and buy supplies<br>
 
 
  # How to Use this Project and Acceptance Criteria
@@ -183,7 +183,7 @@ The motivation for our development is that all our team members like to do DIY p
 
 
 ## Challenges
-Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we were waiting for a response from Reddit, we looked for another alternative and we thought of DeviantArt. It took awhile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and we chose Yelp and changed "Ideas" to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led us in the right direction on how to fix the issue. Another issue that was encountered was displaying the YouTube videos using HTML iframe tag. Evyette helped us solved that problem. 
+Some challenges we faced was when we tried to figure how to use the api for Pinterest, Reddit, and Devianart. It was a long process where we had to fill out applications and get approved. We got some help from Eyvette and Brian, however, we were unsuccessful in being able to easily use any of 3 apis mentioned above. We had applied to Pinterest twice since the first time we did not mention it was for educational purposes. So, the second time we applied we let them know that this is for educational purposes only. While we waited for a response, we had looked into Reddit and unfortunately, it had the same requirements for Pinterest. We had applied there to use the api too. While we were waiting for a response from Reddit, we looked for another alternative and we thought of DeviantArt. It took awhile to figure it out, however, it seemed like a long process just like Pinterest and Reddit. Unfortunately, we were denied access to Reddit and as well as Pinterest for the 2nd time. Due to that we had to shift our focus on the "Ideas" section and we chose Yelp and changed "Ideas" to "Hotspots". We ran into a CORS issue, but we had some help again from Eyvette and Brian that led us in the right direction on how to fix the issue. Another issue that was encountered was displaying the YouTube videos using HTML iframe tag. Evyette helped us solved that problem.
 
 
 

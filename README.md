@@ -197,15 +197,20 @@ screenshots and video below
 
 
 # Directions for Future Development
+
+<h2>Short Term</h2>
 <ul>
-    <li>Create Your Own Username and Password</li>
-    <li>Save in Progress Projects</li>
-    <li>Progression button leads to page</li>
-    <li>Post Projects</li>
-    <li>Comment on other users' Projects/Other users comment on your projects</li>
     <li>Input Location for searching in Hotspots Page</li>
     <li>Add more DIY Categories</li>
     <li>Use more APIs to get project ideas</li>
+       •	Such as Pinterest, Etsy, Twitter, and Live Maps
+<h2>Long Term</h2>
+    <li>Create Your Own Username and Password</li>
+    <li>Save in Progress Projects</li>
+    <li>Progress Projects Page</li>
+    <li>Post Projects Page</li>
+    <li>Comment on other users' Projects
+    <li>Other users comment on your projects</li>
 </ul>
 
 

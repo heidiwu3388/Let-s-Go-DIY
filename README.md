@@ -42,7 +42,7 @@ AND find art hotspots
 SO THAT I can learn to do projects, buy supplies, and share my projects
 
 
- # How to Use the Project and Acceptance Criteria
+ # How to Use this Project and Acceptance Criteria
 
 <u><i><strong>Click on the image below</strong></i></u></a> to be directed straight to the deployed application. 
 <!-- Also, you must click on the this link <a href = "https://cors-anywhere.herokuapp.com/corsdemo">here</a>  right after clicking on the deployed link, to have temporary access to the CORS -->

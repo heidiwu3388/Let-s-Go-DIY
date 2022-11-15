@@ -43,7 +43,7 @@ I WANT some ideas for DIY projects<br>
 AND find art hotspots<br>
 SO THAT I can learn to do projects, save my favorites, find hotspots, and buy supplies<br>
 
- # How to Use this Project and Acceptance Criteria
+# How to Use this Project and Acceptance Criteria
 
 <u><i><strong>Click on the image below</strong></i></u></a> to be directed straight to the deployed application. 
 <!-- Also, you must click on the this link <a href = "https://cors-anywhere.herokuapp.com/corsdemo">here</a>  right after clicking on the deployed link, to have temporary access to the CORS -->
@@ -164,7 +164,8 @@ The motivation for our development is that all our team members like to do DIY p
     <li>CSS3</li>
     <li>Bootstrap</li>
     <li>Vanilla Javascript</li> 
-    <li>Server API</li> 
+    <li>Server API</li>
+    <li>YELP demo server: https://cors-anywhere.herokuapp.com/corsdemo</li> 
 </ul>
 <ul>
     <h4>APIs Used</h4>

@@ -11,8 +11,9 @@ Project #1: PROJECT DIY
 
 
 # Project Description
- Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of our application is to present "Project Ideas" and provide "Art Hotspots". The user can get project "how to" videos from different categories. There are 10 categories and in each category there are 6 project ideas videos. The videos provided are the most viewed from YouTube. There are also 4 categories in the Art Hotspots section and 6 hotspot locations that are the highest rated from Yelp in each category. In addition, the user can save their favorite projects to their favorites. The user's favorites is saved in local storage and it persists when the user clicks refresh. Our live page link can been seen in the <a href="#How-to-Use-this-Project-and-Acceptance-Criteria">How to Use this Project and Acceptance Criteria</a></li> Section. The user also has the option of removing a favorite from the favorites page. You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
 
+ Our project is to create an application for anyone who wants to learn DIY projects, find hotspots for art, and save their favorite art projects. The main feature of our application is to present "Project Ideas" and provide "Art Hotspots". The user can get project "how to" videos from different categories. There are 10 categories and in each category there are 6 project ideas videos. The videos provided are the most viewed from YouTube. There are also 4 categories in the Art Hotspots section and 6 hotspot locations that are the highest rated from Yelp in each category. In addition, the user can save their favorite projects to their favorites. The user's favorites is saved in local storage and it persists when the user clicks refresh. Our live page link can been seen in the <a href="#How-to-Use-this-Project-and-Acceptance-Criteria">How to Use this Project and Acceptance Criteria</a></li> Section. The user also has the option of removing a favorite from the favorites page. You can <a href=https://github.com/hannybear88/Project-1-Project-DIY/>Click here</a>  to see our code for this project. 
+ 
 # Table of Contents
 <nav>
     <ol>
@@ -36,11 +37,11 @@ Project #1: PROJECT DIY
 
 # User-Story 
 
+
 AS an artist<br>
 I WANT some ideas for DIY projects<br>
 AND find art hotspots<br>
 SO THAT I can learn to do projects, save my favorites, find hotspots, and buy supplies<br>
-
 
  # How to Use this Project and Acceptance Criteria
 
@@ -188,7 +189,7 @@ Some challenges we faced was when we tried to figure how to use the api for Pint
 
 
 ## Successes 
-We had successfully created our deployed application. We were able to stay on the topic and just had to shift our focus which was okay because we were happy we didn't have to completely change our ideas and topic. Using the APIs that ended up choosing and successfully fetched information related to our topic. Everyone in the group was so easy going and willing to do their part and kept their word on doing their part. Everyone was helpful with each other with any questions they had. We all communicated really well. 
+We created a fully functioning and deployed web application.  We were able to stay on the topic and just had to shift our focus which was okay because we were happy we didn't have to completely change our ideas and topic. Using the APIs that ended up choosing and successfully fetched information related to our topic. Everyone in the group was so easy going and willing to do their part and kept their word on doing their part. Everyone was helpful with each other with any questions they had. We all communicated really well. 
 
 
 ## Demo

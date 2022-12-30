@@ -1,13 +1,4 @@
-# Project-1
-
-
-
-
-Project #1: PROJECT DIY
-
-
-
-
+# Let's Go DIY
 
 
 # Project Description
